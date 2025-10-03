@@ -21,7 +21,6 @@ AI_Challenge/
 ├── data/                       
 │   └── reviews.csv             # Dataset file (after download)
 ├── requirements.txt            # Project dependencies
-└── README.md                   # Project documentation
 ```
 
 ---
