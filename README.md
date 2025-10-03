@@ -27,7 +27,7 @@ AI_Challenge/
 
 ## Dataset
 
-We use the **Grammar and Online Product Reviews** dataset from Kaggle:  
+I used the **Grammar and Online Product Reviews** dataset from Kaggle:  
 [Dataset link](https://www.kaggle.com/datasets/datafiniti/grammar-and-online-product-reviews?utm_source=chatgpt.com)  
 
 After download, place the CSV file in the `data/` folder and rename it to:  
