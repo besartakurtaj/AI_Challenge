@@ -10,16 +10,17 @@ It classifies online product reviews into **negative, neutral, or positive** sen
 ```bash
 AI_Challenge/
 ├── notebooks/
-│   ├── analysis.ipynb          # Exploratory data analysis in Jupyter
+│   ├── analysis.ipynb          # Exploratory data analysis: sentiment distribution, text length, word clouds
 ├── src/
-│   ├── api.py                  # FastAPI app (REST API for predictions)
+│   ├── api.py                  # FastAPI app
 │   ├── main.py                 # The main script (inspect, preprocess, train, test)
 │   ├── inspect_data.py         # Dataset exploration & sentiment mapping
 │   ├── preprocess.py           # Text preprocessing functions
 │   ├── train.py                # Model training and evaluation
 │   ├── predict.py              # Model loading and prediction helper
-├── data/                       # (Place dataset CSV here)
+├── data/                       
 │   └── reviews.csv             # Dataset file (after download)
+├── requirements.txt            # Project dependencies
 └── README.md                   # Project documentation
 ```
 
@@ -80,6 +81,11 @@ Response:
 {"sentiment": "positive"}
 ```
 
+### 4. Jupyter analysis
+The analysis.ipynb notebook in the notebooks/ folder contains exploratory data analysis, including:
+- Sentiment distribution of reviews.
+- Text length analysis.
+- Word frequency and visualization (word clouds).
 ---
 
 ## Running the Pipeline
@@ -103,7 +109,12 @@ uvicorn src.api:app --reload
 
 Open Swagger UI at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to test interactively.
 
----
+### 3. Running the Jupyter analysis
+Run: 
+```bash
+jupyter notebook
+```
+Open notebooks/analysis.ipynb and run the cells step by step.
 
 ## Requirements
 
